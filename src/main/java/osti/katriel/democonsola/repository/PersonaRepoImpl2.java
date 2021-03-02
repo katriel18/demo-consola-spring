@@ -8,15 +8,15 @@ import org.springframework.stereotype.Repository;
 import osti.katriel.democonsola.DemoConsolaApplication;
 
 @Repository
-@Qualifier("persona1")
-public class PersonaRepoImpl implements IPersonaRepo {
-
+@Qualifier("persona2")
+public class PersonaRepoImpl2 implements IPersonaRepo{
+	
 	private static Logger LOG = LoggerFactory.getLogger(DemoConsolaApplication.class);
 
 	@Override
 	public void registrar(String nombre) {
 		
-		LOG.info("Se registro mediante implementacion 1 " + nombre);
+		LOG.info("Se registro mediante implementacion 2: " + nombre);
 		
 	}
 	
